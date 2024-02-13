@@ -1,0 +1,268 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 150px;
+    min-height: 90vh;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/***************** HEADER ******************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.puceHeader{
+    display: flex;
+    list-style: none;
+}
+ul .liBorder{
+    border-right: 1px solid black;
+}
+ul li{
+    padding: 0px 20px;
+}
+
+/***************** INDEX **************/
+
+#mainIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10rem 0rem;
+}
+#imgProfil{
+    width: 40%;
+    min-width: 400px;
+    max-width: 480px;
+    border-radius: 100rem;
+    margin-right: 80px;
+    cursor: pointer;
+}
+#Apropos{
+    width: 25rem;
+}
+h2{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+#pmoi{
+    font-size: 1.7rem;
+    font-weight: 470;
+    margin-bottom: 0px;
+}
+#myDescription{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 50px;
+}
+#myDescription strong{
+    font-weight: bold;
+}
+#button{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#button a{
+    width: 6.5rem;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    border: 0.2px solid black;
+    font-size: 1.1rem;
+}
+#boxCv{
+    background-color: orange;
+}
+#boxProjets{
+    background-color: red;
+}
+#boxContact{
+    background-color: #80d8da;
+}
+
+/*********************** FOOTER ********************/
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#divFooter{
+    width: 100%;
+    border-top: 1px solid rgba(218, 211, 211, 0.903);
+}
+#divFooter2{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+}
+.title{
+    font-weight: bolder;
+    margin: 1rem 0rem;
+}
+#copyrigth{
+    margin: 1rem 0rem;
+}
+#logoSociaux{
+    display: flex;
+    justify-content: space-between;
+}
+#logoSociaux iconify-icon{
+    font-size: 1.5rem;
+}
+
+/****************** CV *******************/
+
+#mainCv{
+    padding: 0px 6.3rem;
+}
+#h2Cv{
+    font-size: 1.8rem;
+    margin-bottom: 2.7rem;
+}
+.sectionCv{
+    border-top: 1px solid rgb(202, 196, 196);
+    margin-top: 50px;
+}
+section h3{
+    font-size: 1.4rem;
+    margin-bottom: 2.3rem;
+    margin-top: 50px;
+}
+.headerCvH4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerCvH4 h4{
+    margin-bottom: 0px;
+}
+/****************** PROJETS ***************/
+#mainProjets{
+    padding: 0% 5%;
+}
+#h2Projets{
+    font-size: 2rem;
+}
+#mainProjets section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.textProjets{
+    width: 40%;
+}
+.boxSiteProjets{
+    width: 40%;
+    border: 20px solid rgb(210, 208, 208);
+}
+.imgSiteProjets{
+    width: 100%;
+}
+
+/****************** CONTACT ***************/
+
+#mainContact{
+    /* padding: 0% 10%; */
+    font-size: 1.15rem;
+}
+#mainContact h2{
+    font-size: 1.8rem;
+}
+#mainContact section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blocContact{
+    display: flex;
+    gap: 6%;
+    margin-bottom: 10px;
+}
+.inputContact{
+    height: 1.9rem;
+}
+.inputContact, #mainContact textarea{
+    width: 15rem;
+}
+textarea{
+    height: 150px;
+}
+#mainContact input, #mainContact textarea{
+    margin-top: 10px;
+}
+#blocContact3{
+    align-items: flex-end;
+}
+#btnEnvoyer{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: orange;
+    border: 0.2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/*----------------------RESPONSIVE----------------*/
+@media screen and (max-width: 1023px){
+
+    body{
+        padding: 0;
+    }
+    header{
+        flex-direction: column;
+    }
+    .puceHeader{
+        padding: 0;
+    }
+    #mainIndex{
+        flex-direction: column;
+        margin:5rem 0rem;
+    }
+    #imgProfil{
+        margin-right: 0;
+        min-width: 350px;
+        max-width: 350px;
+    }
+    #Apropos{
+        text-align: center;
+    }
+    h2{
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+        margin-top: 4rem;
+    }
+    #button{
+        justify-content: center;
+    }
+    #button a{
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-left: 1rem;
+    }
+    #button a:first-child{
+        margin-left: 0;
+    }
+    #divFooter2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__item{
+        margin-bottom: 1.3rem;
+    }
+}
+
